@@ -16,6 +16,9 @@ public class Main {
             System.out.println("Enter employee name: ");
             String e_name = sc.nextLine();
 
+            System.out.println("Enter employee type (Officer/Staff): ");
+            String e_type = sc.nextLine();
+
             System.out.println("Enter date of birth (YYYY-MM-DD): ");
             LocalDate e_dob = LocalDate.parse(sc.nextLine());
 
@@ -33,7 +36,7 @@ public class Main {
             int totalSickDats = sc.nextInt();
             sc.nextLine();
 
-            employees.add(new Employee(e_id, e_name, e_dob, e_email, e_joiningDate, totalVacationDays, totalSickDats));
+            employees.add(new Employee(e_id, e_type, e_type, e_dob, e_email, e_joiningDate, totalVacationDays, totalSickDats));
         }
 
         System.out.println("\nEmployee Details: ");
